@@ -32,7 +32,7 @@ wget https://github.com/lightningnetwork/lnd/releases/download/$LND_VERSION/mani
 wget https://github.com/lightningnetwork/lnd/releases/download/$LND_VERSION/manifest-$LND_VERSION.txt.sig
 wget https://keybase.io/roasbeef/pgp_keys.asc
 
-lnd-linux-armv7-v0.5.2-beta.tar.gz
+tar -xvf lnd-linux-armv7-$LND_VERSION.tar.gz
 install -m 0755 -o root -g root -t /usr/local/bin lnd-linux-armv7-$LND_VERSION/*
 
 while [[ true ]]; do
